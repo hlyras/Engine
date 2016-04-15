@@ -4,7 +4,7 @@ var e = {
 	altura: 30,
 	largura: 30,
 	score: 0,
-	speed: 1,
+	speed: 2.2,
 	cor: "white"
 };
 

@@ -11,6 +11,18 @@ function engine() {
 		moveEsquerda();
 		moveDireita();
 
+		ctx.beginPath();
+		ctx.rect(200, 0, 5, 100);
+		ctx.rect(400, 0, 5, 100);
+		ctx.rect(200, 100, 205, 5);
+		ctx.rect(200, 100, 205, 5);
+		ctx.rect(0, 298, 600, 5);
+		ctx.rect(200, 500, 5, 100);
+		ctx.rect(400, 500, 5, 100);
+		ctx.rect(200, 500, 205, 5);
+		ctx.fillStyle = "white";
+		ctx.fill();
+
 		ctx.fillStyle = "white";
 
 		ctx.font = "25px Arial bold";
@@ -21,21 +33,21 @@ function engine() {
 
 		ctx.beginPath();
 		ctx.rect(e.x, e.y, e.largura, e.altura);
-		ctx.fillStyle = "silver";
+		ctx.fillStyle = "black";
 		ctx.shadowBlur=15;
 		ctx.shadowColor="white";
 		ctx.fill();
 
 		ctx.beginPath();
 		ctx.rect(d.x, d.y, d.largura, d.altura);
-		ctx.fillStyle = "red";
+		ctx.fillStyle = "#00FFFF";
 		ctx.shadowBlur=15;
 		ctx.shadowColor="pink";
 		ctx.fill();
 
 		ctx.beginPath();
 		ctx.rect(b.x, b.y, b.largura, b.altura);
-		ctx.fillStyle = "green";
+		ctx.fillStyle = "white";
 		ctx.shadowBlur=15;
 		ctx.shadowColor="pink";
 		ctx.fill();
@@ -92,4 +104,3 @@ function newgame() {
 		pl2 = 0;
 	}
 }
-
